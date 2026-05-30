@@ -1,0 +1,41 @@
+<?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
+<package format="3">
+<name>testbed_navigation</name>
+<version>1.0.0</version>
+<description> Navigation package for the Testbed-T1.0.0 robot developed by ERIC Robotics. Provides modular launch files for map loading, AMCL localization, and nav2-based navigation. </description>
+<maintainer email="amoghjoshi227@gmail.com">Amogh Joshi</maintainer>
+<license>Apache-2.0</license>
+<buildtool_depend>ament_cmake</buildtool_depend>
+<!--  Nav2 core dependencies  -->
+<depend>nav2_common</depend>
+<depend>nav2_bringup</depend>
+<depend>nav2_map_server</depend>
+<depend>nav2_amcl</depend>
+<depend>nav2_planner</depend>
+<depend>nav2_controller</depend>
+<depend>nav2_bt_navigator</depend>
+<depend>nav2_recoveries</depend>
+<depend>nav2_lifecycle_manager</depend>
+<depend>nav2_waypoint_follower</depend>
+<depend>nav2_velocity_smoother</depend>
+<depend>nav2_collision_monitor</depend>
+<depend>nav2_msgs</depend>
+<depend>nav2_util</depend>
+<!--  ROS2 core  -->
+<depend>rclcpp</depend>
+<depend>rclpy</depend>
+<depend>std_msgs</depend>
+<depend>geometry_msgs</depend>
+<depend>sensor_msgs</depend>
+<depend>nav_msgs</depend>
+<depend>tf2</depend>
+<depend>tf2_ros</depend>
+<!--  Launch system  -->
+<exec_depend>ros2launch</exec_depend>
+<exec_depend>launch_ros</exec_depend>
+<test_depend>ament_lint_auto</test_depend>
+<test_depend>ament_lint_common</test_depend>
+<export>
+<build_type>ament_cmake</build_type>
+</export>
+</package>
